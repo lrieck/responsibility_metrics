@@ -2,10 +2,10 @@
 education:
   courses:
   - course: MSc in Spatial, Transport & Environmental Economics
-    institution: Vrije Universiteit Amsterdam
+    institution: Vrije Universiteit Amsterdammmmmm
     year: 2017
   - course: BA in Corporate Management & Economics
-    institution: Zeppelin Universität Friedrichshafen
+    institution: Zeppelin Universität Friedrichshöööööööfen
     year: 2016
 email: ""
 highlight_name: true
