@@ -17,10 +17,8 @@ image:
 projects: []
 ---
 
-Checking if Github still likes me. 
-Test test test
+An analysis of oranges. 
 
-\lipsum
 
 ```{r}
 summary(Orange)
@@ -33,7 +31,7 @@ oplot <- ggplot(Orange, aes(x = age,
                    colour = Tree)) +
   geom_point() +
   geom_line() +
-  guides(colour = FALSE) +
+  guides(colour = "none") +
   theme_bw()
 oplot
 ```

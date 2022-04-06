@@ -17,6 +17,9 @@ image:
 projects: []
 ---
 
+An analysis of oranges. 
+
+
 
 ```r
 summary(Orange)
@@ -30,12 +33,6 @@ summary(Orange)
 ##  2:7   Mean   : 922.1   Mean   :115.9  
 ##  4:7   3rd Qu.:1372.0   3rd Qu.:161.5  
 ##        Max.   :1582.0   Max.   :214.0
-```
-
-
-```
-## Warning: `guides(<scale> = FALSE)` is deprecated. Please use `guides(<scale> =
-## "none")` instead.
 ```
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
