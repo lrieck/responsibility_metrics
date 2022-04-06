@@ -5,7 +5,7 @@ education:
     institution: Vrije Universiteit Amsterdammmmmm
     year: 2017
   - course: BA in Corporate Management & Economics
-    institution: Zeppelin Universität Friedrichshöööööööfen
+    institution: Zeppelin Universität Friedrichshafen
     year: 2016
 email: ""
 highlight_name: true
