@@ -2,7 +2,7 @@
 education:
   courses:
   - course: MSc in Spatial, Transport & Environmental Economics
-    institution: Vrije Universiteit Amsterdammmmmm
+    institution: Vrije Universiteit Amsterdam
     year: 2017
   - course: BA in Corporate Management & Economics
     institution: Zeppelin Universität Friedrichshafen
@@ -14,7 +14,7 @@ interests:
 - Sustainable Technology
 - Network Analysis
 
-role: Project Manager
+role: Responsible Metrician
 social:
 - icon: envelope
   icon_pack: fas
@@ -32,5 +32,7 @@ superuser: true
 title: Lennart Rieck
 ---
 
-Hi! 
+Welcome! 
+I am from the north of Germany but have spent the last few years in a various countries, working on responsible sourcing and energy markets. As my daily work is not currently related to those topics, I decided to stay up-to-date and engaged in my free time. All content on this site is exclusively my work and does not represent any positions or opinions of any other parties. 
+
 
