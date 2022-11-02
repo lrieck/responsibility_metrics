@@ -20,18 +20,19 @@ projects: []
 An analysis of oranges. 
 
 
-```{r}
-summary(Orange)
+```{r include=FALSE}
+library(sf)
+library(tidyverse)
+library(hrbrthemes)
+
+Ortsteile <- st_read(
+  paste0("/Users/lennartrieck/Desktop/RespMet/02_Data/03_GeoData/",
+  "01_Bremen/01_Verwaltungsbezirke/Verwaltungsgrenzen_HB_BHV/hb_ortsteile_BRE.shp"))
 ```
 
 ```{r echo=FALSE}
-library(ggplot2)
-oplot <- ggplot(Orange, aes(x = age, 
-                   y = circumference, 
-                   colour = Tree)) +
-  geom_point() +
-  geom_line() +
-  guides(colour = "none") +
-  theme_bw()
-oplot
+ggplot() +
+  geom_sf(data=Ortsteile) +
+  theme_ipsum() 
+
 ```
