@@ -17,7 +17,8 @@ image:
 projects: []
 ---
 
-An analysis of oranges. 
+# Cars in Bremen
+Number of cars across the different "Ortsteile" in Bremen. 
 
 
 
@@ -81,3 +82,29 @@ ggplot() +
   theme(legend.position = "none")
 
 ```
+
+# Electric Vehicles
+
+Change from 2009 to 2022 in number (share) of electric vehicles. 
+
+```{r echo=FALSE}
+ggplot() +
+  geom_sf(data = Ortsteile_HB, 
+          aes(fill = KfZ_Total_Thousand),
+          color = "white") +
+  theme_ipsum() + 
+  facet_wrap(year(Jahr) ~ .) +
+  scale_fill_distiller(palette = "BuGn", direction = 1) + 
+  theme(legend.position = "none")
+
+```
+
+# To come
+
+\begin{enumerate}
+  \item Add water layer to maps.
+  \item Add surrounding Landkreise as backdrop.
+  \item Include change over time.
+  \item Share of electric instead of absolute numbers.
+  \item Cars per # of inhabitants.
+\end{enumerate}
