@@ -20,19 +20,64 @@ projects: []
 An analysis of oranges. 
 
 
+
+
+
 ```{r include=FALSE}
 library(sf)
 library(tidyverse)
 library(hrbrthemes)
+library(readr)
+library(lubridate)
 
-Ortsteile <- st_read(
+Ortsteile_HB <- st_read(
   paste0("/Users/lennartrieck/Desktop/RespMet/02_Data/03_GeoData/",
   "01_Bremen/01_Verwaltungsbezirke/Verwaltungsgrenzen_HB_BHV/hb_ortsteile_BRE.shp"))
+
+Bundeslaender_D <- st_read(
+  paste0("/Users/lennartrieck/Desktop/RespMet/02_Data/03_GeoData/",
+  "Verwaltungsgebiete/vg5000_01-01.utm32s.shape.ebenen/vg5000_ebenen_0101/VG5000_LAN.shp"))
+
+Landkreise_D <- st_read(
+  paste0("/Users/lennartrieck/Desktop/RespMet/02_Data/03_GeoData/",
+  "Verwaltungsgebiete/vg5000_01-01.utm32s.shape.ebenen/vg5000_ebenen_0101/VG5000_KRS.shp"))
+
+Gemeinden_D <- st_read(
+  paste0("/Users/lennartrieck/Desktop/RespMet/02_Data/03_GeoData/",
+  "Verwaltungsgebiete/vg5000_01-01.utm32s.shape.ebenen/vg5000_ebenen_0101/VG5000_VWG.shp"))
+
+# Numeric Data
+HB_Cars <- read_csv("~/Desktop/RespMet/02_Data/02_Tabular/01_Bremen/2022-11-01_2009-2022_KfzNachKrafstoffFix.csv", 
+    col_types = cols(GebietCode = col_character(), 
+        Jahr = col_date(format = "%Y-%m-%d"), 
+        KfZ_Total_Thousand = col_number(), 
+        KfZ_Petrol_Thousand = col_number(), 
+        KfZ_Diesel_Thousand = col_number(), 
+        KfZ_NaturalGas_Thousand = col_number(), 
+        KfZ_electric_hybrid_Thousand = col_number()), 
+    skip = 1)
+
+# Add
+# (1) Water map for Germany to highlight waterways and lakes
 ```
+
+
+```{r include=FALSE}
+
+HB_Cars$GebietCode <- paste0("0",HB_Cars$GebietCode)
+Ortsteile_HB <- left_join(Ortsteile_HB, HB_Cars, by = c("SCH_OT"="GebietCode"))
+
+
+```
+
 
 ```{r echo=FALSE}
 ggplot() +
-  geom_sf(data=Ortsteile) +
-  theme_ipsum() 
+  geom_sf(data = filter(Ortsteile_HB, year(Jahr) == 2022), 
+          aes(fill = KfZ_Total_Thousand),
+          color = "white") +
+  theme_ipsum() + 
+  scale_fill_distiller(palette = "BuGn", direction = 1) + 
+  theme(legend.position = "none")
 
 ```
