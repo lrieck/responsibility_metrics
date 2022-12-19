@@ -1,5 +1,5 @@
 ---
-title: Hi Hugo
+title: Bremen Energy Cars
 author: Lennart Rieck
 date: '2021-10-16'
 slug: hi-hugo
@@ -36,15 +36,15 @@ Ortsteile_HB <- st_read(
   "01_Bremen/01_Verwaltungsbezirke/Verwaltungsgrenzen_HB_BHV/hb_ortsteile_BRE.shp"))
 
 Bundeslaender_D <- st_read(
-  paste0("/Users/lennartrieck/Desktop/RespMet/02_Data/03_GeoData/",
+  paste0("/Users/lennartrieck/Desktop/RespMet/02_Data/03_GeoData/01_Bremen/",
   "Verwaltungsgebiete/vg5000_01-01.utm32s.shape.ebenen/vg5000_ebenen_0101/VG5000_LAN.shp"))
 
 Landkreise_D <- st_read(
-  paste0("/Users/lennartrieck/Desktop/RespMet/02_Data/03_GeoData/",
+  paste0("/Users/lennartrieck/Desktop/RespMet/02_Data/03_GeoData/01_Bremen/",
   "Verwaltungsgebiete/vg5000_01-01.utm32s.shape.ebenen/vg5000_ebenen_0101/VG5000_KRS.shp"))
 
 Gemeinden_D <- st_read(
-  paste0("/Users/lennartrieck/Desktop/RespMet/02_Data/03_GeoData/",
+  paste0("/Users/lennartrieck/Desktop/RespMet/02_Data/03_GeoData/01_Bremen/",
   "Verwaltungsgebiete/vg5000_01-01.utm32s.shape.ebenen/vg5000_ebenen_0101/VG5000_VWG.shp"))
 
 # Numeric Data
