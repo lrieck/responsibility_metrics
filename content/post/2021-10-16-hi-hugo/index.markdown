@@ -1,5 +1,5 @@
 ---
-title: Hi Hugo
+title: Car Types Bremen
 author: Lennart Rieck
 date: '2021-10-16'
 slug: hi-hugo

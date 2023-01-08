@@ -2,7 +2,7 @@
 title: Bremen Energy Cars
 author: Lennart Rieck
 date: '2021-10-16'
-slug: hi-hugo
+slug: cars-bremen
 categories: []
 tags: []
 subtitle: ''
@@ -10,7 +10,7 @@ summary: ''
 authors: []
 lastmod: '2021-10-16T20:30:06+02:00'
 featured: no
-image:
+image: 
   caption: ''
   focal_point: ''
   preview_only: no
