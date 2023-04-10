@@ -1,5 +1,5 @@
 ---
-title: Map of Japan
+title: Map of Japan (Draft)
 author: Lennart Rieck
 date: '2022-12-18'
 slug: map-of-japan-fit-distribution
@@ -15,6 +15,7 @@ summary: 'Lorem ipsum lorem ipsum'
 authors: []
 lastmod: '2022-12-18T20:27:01+01:00'
 featured: no
+draft: yes
 image:
   caption: ''
   focal_point: ''
