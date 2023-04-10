@@ -1,15 +1,16 @@
 ---
-title: Bremen Energy Cars
+title: Bremen Energy Cars (Draft)
 author: Lennart Rieck
-date: '2021-10-16'
+date: '2025-10-16'
 slug: cars-bremen
 categories: []
 tags: []
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2021-10-16T20:30:06+02:00'
+lastmod: '2025-10-16T20:30:06+02:00'
 featured: no
+draft: yes
 image: 
   caption: ''
   focal_point: ''
@@ -30,13 +31,13 @@ Number of cars across the different "Ortsteile" in Bremen.
 
 
 
-<img src="/post/2021-10-16-hi-hugo/2022-12-12_HBCars_files/figure-html/unnamed-chunk-3-1.png" width="672" />
+<img src="/post/2023-04-10-BremenCars/2022-12-12_HBCars_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 
 # Electric Vehicles
 
 Change from 2009 to 2022 in number (share) of electric vehicles. 
 
-<img src="/post/2021-10-16-hi-hugo/2022-12-12_HBCars_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+<img src="/post/2023-04-10-BremenCars/2022-12-12_HBCars_files/figure-html/unnamed-chunk-4-1.png" width="672" />
 
 # To come
 
