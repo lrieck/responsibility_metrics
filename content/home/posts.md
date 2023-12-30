@@ -10,7 +10,7 @@ headless: true
 weight: 60
 
 title: Recent Posts
-subtitle:
+subtitle: Read now!
 
 content:
   # Page type to display. E.g. post, talk, publication...
@@ -27,7 +27,7 @@ content:
     exclude_past: false
     publication_type: ""
   # Choose how many pages you would like to offset by
-  offset: 1
+  offset: 0
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
 
