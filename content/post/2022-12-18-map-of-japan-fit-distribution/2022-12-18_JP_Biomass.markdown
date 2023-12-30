@@ -15,7 +15,7 @@ summary: 'Lorem ipsum lorem ipsum'
 authors: []
 lastmod: '2022-12-18T20:27:01+01:00'
 featured: no
-draft: yes
+draft: no
 image:
   caption: ''
   focal_point: ''
