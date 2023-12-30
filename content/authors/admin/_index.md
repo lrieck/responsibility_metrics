@@ -21,10 +21,6 @@ social:
   link: /#contact
 - display:
     header: true
-  icon: twitter
-  icon_pack: fab
-  label: Follow me on Twitter
-  link: https://twitter.com/respmet
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/lennart-rieck-70741065/
