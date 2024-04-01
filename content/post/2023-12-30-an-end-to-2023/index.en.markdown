@@ -12,6 +12,7 @@ summary: ''
 authors: [Lennart Rieck]
 lastmod: '2023-12-30T09:37:46+01:00'
 featured: no
+draft: yes
 image: 
   caption: ''
   focal_point: ''
